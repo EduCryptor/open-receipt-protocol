@@ -12,7 +12,11 @@ The shopper can pay with cash, a card, a gift card, or someone else's payment me
 4. The point-of-sale system sends its ordinary receipt text to that destination.
 5. Any compatible application can store or interpret the receipt.
 
-OpenReceipt is not a payment system, loyalty program, accounting application, or receipt parser. CountMoney can eventually be one application that uses the standard.
+OpenReceipt is not a payment system, loyalty program, or accounting application. Its stable core routes receipts. Optional, interoperable layers can normalize products and attach semantic categories without forcing every application to depend on one proprietary merchant-code database. CountMoney can eventually be one application that uses these layers.
+
+## Live demonstration
+
+Try the [OpenReceipt checkout simulation](https://educryptor.github.io/open-receipt-protocol/). It uses fake products, sends nothing over the Internet, and demonstrates the intended one-token interaction.
 
 ## Current status
 
@@ -26,6 +30,7 @@ The first milestone is intentionally small:
 
 - [Plain-language guide](docs/plain-language-guide.md)
 - [Protocol proposal v0.1](docs/protocol-v0.1.md)
+- [Semantic categorization model](docs/semantic-categorization.md)
 - [Build roadmap](docs/roadmap.md)
 - [How to contribute](CONTRIBUTING.md)
 
