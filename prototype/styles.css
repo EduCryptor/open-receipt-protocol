@@ -1,0 +1,32 @@
+:root {
+  color-scheme: light dark;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #111827;
+  color: #f9fafb;
+}
+
+main {
+  width: min(760px, calc(100% - 2rem));
+  margin: 2rem auto;
+}
+
+section {
+  margin: 1rem 0;
+  padding: 1.25rem;
+  border: 1px solid #374151;
+  border-radius: 12px;
+  background: #1f2937;
+}
+
+.lede { color: #d1d5db; }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: .55rem; border-bottom: 1px solid #374151; text-align: left; }
+th:last-child, td:last-child { text-align: right; }
+label { display: block; margin-bottom: .4rem; }
+input { box-sizing: border-box; width: 100%; padding: .7rem; }
+button { margin-top: .75rem; padding: .75rem 1rem; font-weight: 700; cursor: pointer; }
+pre { overflow-x: auto; white-space: pre-wrap; }

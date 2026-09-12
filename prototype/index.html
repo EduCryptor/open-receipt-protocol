@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OpenReceipt checkout simulation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>OpenReceipt checkout simulation</h1>
+    <p class="lede">This demonstration uses fake products and stays entirely in your browser.</p>
+
+    <section>
+      <h2>1. Simulated basket</h2>
+      <table>
+        <thead><tr><th>Item</th><th>Price</th></tr></thead>
+        <tbody id="basket"></tbody>
+        <tfoot><tr><th>Total</th><th id="total"></th></tr></tfoot>
+      </table>
+    </section>
+
+    <section>
+      <h2>2. Present receipt token</h2>
+      <label for="token">Simulated QR/NFC value</label>
+      <input id="token" value="https://example.org/r/demo-user" autocomplete="off">
+      <button id="send">Scan token and send receipt</button>
+      <p id="status" role="status" aria-live="polite"></p>
+    </section>
+
+    <section>
+      <h2>3. Receipt destination</h2>
+      <pre id="receipt">No receipt delivered yet.</pre>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
